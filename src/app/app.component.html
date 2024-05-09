@@ -1,0 +1,11 @@
+<h1>Teplate angular</h1>
+<ul>
+    @if(!isAuthenticated()){
+        <li (click)="login()">Entrar</li>
+    }
+    @if(isAuthenticated()){
+        <li (click)="logout()">Sair</li>
+    }
+</ul>
+<button (click)="getUserById()">Teste</button>
+<router-outlet></router-outlet>
